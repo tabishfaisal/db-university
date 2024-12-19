@@ -1,8 +1,8 @@
 // 1. Contare quanti iscritti ci sono stati ogni anno //
 
-
-
-
+SELECT count(*) AS `enrolment_count`, YEAR(`enrolment_date`) AS `enrolment_year`
+FROM `students`
+GROUP BY `enrolment_year`
 
 // 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio //
 
