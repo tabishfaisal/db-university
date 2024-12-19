@@ -22,5 +22,10 @@ GROUP BY `exam_id`
 
 ///
 
-
 // 4. Contare quanti corsi di laurea ci sono per ogni dipartiment //
+
+SELECT COUNT(`name`) AS `corsi di laurea`, `name` AS `nome del corsi`
+FROM `departments`
+GROUP BY `name`
+
+///
